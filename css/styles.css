@@ -1,0 +1,141 @@
+a, button{
+    cursor: pointer;
+}
+body{
+    font-family: 'Spartan', sans-serif;
+    margin: 0;
+    padding: 2rem 0;
+    background-color: #345B63;
+}
+
+
+.container{
+    width: 500px;
+    margin: auto;
+    color: #D4ECDD;
+}
+
+/* Top heading  */
+.container-heading {
+    display: flex;
+    justify-content: space-between;
+}
+.theme-select{
+    padding-top: 1rem;
+}
+
+/* display box */
+.display-result{
+    width: 468px;
+    height: 7rem;
+    background-color:  #112031;
+    color: #D4ECDD;
+    font-size: xx-large;
+    text-align: right;
+    padding: 1px 16px;
+    user-select: none;
+}
+
+/* buttons */
+.btn-group{
+    margin-top: 16px;
+    padding: 15px;
+    background-color: #112031;
+}
+.btn-row{
+    display: flex;
+}
+.btn{
+    flex: 1;
+    font-size: larger;
+    margin: 8px;
+    background-color: #D4ECDD;
+    color: #112031;
+    border-bottom: 4px inset #79B4B7 !important;
+}
+.eql{
+    color: #D4ECDD;
+    background-color: #FF4848;
+    border-bottom: 4px inset #BB2205 !important;
+}
+.del, .alc{
+    color: #D4ECDD;
+    background-color: #345B63;
+    border-bottom: 4px inset #213E3B !important;
+}
+.btn > h2{
+    margin: 10px 0;
+}
+.btn:hover{
+    opacity: 0.6;
+}
+
+
+/* border radius */
+.display-result, .btn-group, .btn{
+    border-style: none;
+    border-radius: 8px;
+}
+
+
+
+
+
+/* Theme 2 */
+.body-theme-2{
+    background-color: hsl(0, 0%, 90%);
+}
+.container-theme-2, .display-result-theme-2, .btn-theme-2{
+    color: hsl(60, 10%, 19%);
+}
+.display-result-theme-2{
+    background-color: hsl(0, 0%, 93%);
+}
+.btn-group-theme-2{
+    background-color: hsl(0, 5%, 81%);
+}
+.btn-theme-2{
+    background-color: hsl(45, 7%, 89%);
+    border-bottom: 4px inset hsl(35, 11%, 61%) !important;
+}
+.eql-theme-2{
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(25, 98%, 40%);
+    border-bottom: 4px inset hsl(25, 99%, 27%) !important;
+}
+.del-theme-2, .alc-theme-2{
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(185, 42%, 37%);
+    border-bottom: 4px inset hsl(185, 58%, 25%) !important;
+}
+
+
+
+
+/* media Querries */
+@media (max-width: 510px) {
+    body{
+        font-size: medium;
+    }
+    .container{
+        width: 350px;
+        
+    }
+    .display-result{
+        width: 318px;
+        height: 5rem;   
+    }
+
+}
+@media (max-width: 350px){
+    body{
+        font-size: small;
+    }
+    .container{
+        width: 300px;
+    }
+    .display-result{
+        width: 268px;
+        height: 5rem;
+    }
+}

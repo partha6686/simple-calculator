@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Calculator app</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="container-heading">
+      <div>
+        <h2>E-clac</h2>
+      </div>
+      <div class="theme-select">
+        <a id="theme-change-link"><i class="fas fa-sun fa-2x theme-icon"></i></a>
+      </div>
+    </div>
+
+
+    <input type="text" id="display-screen" value="" class="display-result" selected>
+      <!-- <h2 class="display-">|</h2> -->
+      <!-- Display Div -->
+    </input>
+
+
+    <div class="btn-group">
+      <div class="btn-row">
+        <button class="btn"><h2>(</h2></button>
+        <button class="btn"><h2>)</h2></button>
+        <button class="btn"><h2 hidden>%</h2><i class="fas fa-percent"></i></button>
+        <button class="btn del"><h2>DEL</h2></button>
+        <!-- <button class="btn del"><h2>DEL</h2></button> -->
+      </div>
+      <div class="btn-row">
+        <button class="btn"><h2>7</h2></button>
+        <button class="btn"><h2>8</h2></button>
+        <button class="btn"><h2>9</h2></button>
+        <button class="btn op+"><h2 hidden>+</h2><i class="fas fa-plus"></i></button>
+      </div>
+      <div class="btn-row">
+        <button class="btn"><h2>4</h2></button>
+        <button class="btn"><h2>5</h2></button>
+        <button class="btn"><h2>6</h2></button>
+        <button class="btn op-"><h2 hidden>-</h2><i class="fas fa-minus"></i></button>
+      </div>
+      <div class="btn-row">
+        <button class="btn"><h2>1</h2></button>
+        <button class="btn"><h2>2</h2></button>
+        <button class="btn"><h2>3</h2></button>
+        <button class="btn opx"><h2 hidden>*</h2><i class="fas fa-times"></i></button>
+      </div>
+      <div class="btn-row">
+        <button class="btn"><h2>.</h2></button>
+        <button class="btn"><h2>0</h2></button>
+        <button class="btn"><h2>𝝅</h2></button>
+        <button class="btn op/"><h2 hidden>/</h2><i class="fas fa-divide"></i></button>
+      </div>
+      <div class="btn-row">
+        <button class="btn alc"><h2>AC</h2></button>
+        <button class="btn eql"><h2 hidden>=</h2><i class="fas fa-equals"></i></button>
+      </div>
+    </div>
+
+  </div>
+  
+
+
+
+  <!-- JS -->
+  <script src="js_files/scripts.js"></script>
+
+  <!-- Font Awesome-JS -->
+  <script src="https://kit.fontawesome.com/fc87503880.js" crossorigin="anonymous"></script>
+</body>
+</html>
